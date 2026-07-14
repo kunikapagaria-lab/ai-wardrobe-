@@ -12,9 +12,9 @@ const SEEN_KEY = "wardrobeai-doors-seen";
 // than a flicker.
 const HOLD_MS = 650;
 // Must exceed the CSS zoom transition (2s) so the stage doesn't unmount
-// mid-zoom, plus enough of a tail for the door-open animation (which starts
-// partway through the zoom, see globals.css) to finish.
-const OPEN_DURATION_MS = 2400;
+// mid-zoom, plus enough of a tail for the door-open animation (1.5s duration,
+// 1s/1.06s delay, see globals.css) to actually finish before this unmounts it.
+const OPEN_DURATION_MS = 2800;
 
 type Phase = "hidden" | "closed" | "opening";
 

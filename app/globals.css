@@ -266,11 +266,11 @@ body {
    each door toward the viewer as it swings past ~90°, which is what makes
    it look like it's opening outward — no extra translateZ trick needed. */
 .wardrobe-cupboard-open .wardrobe-cupboard-door-left {
-  animation: wardrobe-door-open-left 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: wardrobe-door-open-left 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 1s;
 }
 .wardrobe-cupboard-open .wardrobe-cupboard-door-right {
-  animation: wardrobe-door-open-right 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: wardrobe-door-open-right 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 1.06s;
 }
 @keyframes wardrobe-door-open-left {
