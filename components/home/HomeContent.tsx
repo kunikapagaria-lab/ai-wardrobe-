@@ -87,11 +87,11 @@ const OCCASIONS = [
 ];
 
 const CALENDAR_DAYS = [
-  { day: "Mon", weather: Sun, temp: "24°C", occasion: "Weekly Sync", outfit: ["t3", "b1", "s3"], costPerWear: "$4.20" },
-  { day: "Tue", weather: CloudRain, temp: "16°C", occasion: "Client Lunch", outfit: ["t2", "b3", "o2", "s2"], costPerWear: "$8.50" },
-  { day: "Wed", weather: Wind, temp: "18°C", occasion: "Coffee Run", outfit: ["t1", "b2", "s1"], costPerWear: "$1.10" },
-  { day: "Thu", weather: Sun, temp: "22°C", occasion: "Focus Day", outfit: ["t2", "b1", "s1"], costPerWear: "$3.40" },
-  { day: "Fri", weather: CloudRain, temp: "15°C", occasion: "Date Night", outfit: ["t3", "b3", "o1", "s2"], costPerWear: "$6.80" },
+  { day: "Mon", weather: Sun, temp: "24°C", occasion: "Weekly Sync", outfit: ["t3", "b1", "s3"] },
+  { day: "Tue", weather: CloudRain, temp: "16°C", occasion: "Client Lunch", outfit: ["t2", "b3", "o2", "s2"] },
+  { day: "Wed", weather: Wind, temp: "18°C", occasion: "Coffee Run", outfit: ["t1", "b2", "s1"] },
+  { day: "Thu", weather: Sun, temp: "22°C", occasion: "Focus Day", outfit: ["t2", "b1", "s1"] },
+  { day: "Fri", weather: CloudRain, temp: "15°C", occasion: "Date Night", outfit: ["t3", "b3", "o1", "s2"] },
 ];
 
 const STEPS = [
@@ -400,7 +400,7 @@ export function HomeContent({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "var(--w-text)" }}>Smart Closet Planner</h2>
             <p style={{ color: "var(--w-text-muted)" }}>
-              Align outfits automatically with local weather forecasts and track your cost-per-wear stats over time.
+              Align outfits automatically with local weather forecasts and plan your looks ahead of time.
             </p>
           </div>
 
@@ -439,12 +439,6 @@ export function HomeContent({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
                       </div>
                     );
                   })}
-                </div>
-
-                {/* Cost per wear */}
-                <div className="pt-2 mt-auto flex items-center justify-between text-[10px]" style={{ borderTop: "1px solid #E8DAC0" }}>
-                  <span style={{ color: "var(--w-card-text-muted)" }}>Cost/Wear:</span>
-                  <span className="font-bold" style={{ color: "var(--w-accent)" }}>{cd.costPerWear}</span>
                 </div>
               </div>
             ))}
