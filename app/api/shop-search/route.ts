@@ -6,9 +6,9 @@ import { rateLimit } from "@/lib/rate-limit";
 // Vercel, which defaults to a much shorter function timeout) enough headroom.
 export const maxDuration = 60;
 
-// This is the one search route the public, signed-out Sandbox is allowed to
-// call — so it can't require auth like the others. Rate-limit it per IP
-// instead, so it can't be scripted into an unlimited free SerpApi proxy.
+// This is the one search route the public, signed-out Canvas page is
+// allowed to call — so it can't require auth like the others. Rate-limit it
+// per IP instead, so it can't be scripted into an unlimited free SerpApi proxy.
 export async function POST(req: NextRequest) {
   const limited = rateLimit(req, { limit: 10, windowMs: 2 * 60 * 1000 });
   if (limited) return limited;

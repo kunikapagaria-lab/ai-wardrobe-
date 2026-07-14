@@ -1,8 +1,8 @@
 import { createClient } from "@/lib/supabase/server";
-import { SandboxView } from "@/components/sandbox/SandboxView";
+import { CanvasView } from "@/components/canvas/CanvasView";
 
-export default async function SandboxPage() {
+export default async function CanvasPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  return <SandboxView isLoggedIn={!!user} />;
+  return <CanvasView isLoggedIn={!!user} />;
 }

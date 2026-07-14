@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { LOGGED_IN_NAV } from "@/components/layout/TopNav";
 
 // Left-to-right nav order, minus Home (this transition only wraps the
-// protected app pages — Home and Sandbox live outside this layout).
+// protected app pages — Home and Canvas live outside this layout).
 const PAGE_ORDER = LOGGED_IN_NAV.map((item) => item.href).filter((href) => href !== "/");
 
 export function PageSlideTransition({ children }: { children: React.ReactNode }) {

@@ -160,11 +160,11 @@ export function HomeContent({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="/sandbox"
+            href="/canvas"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold border transition-all hover:bg-white/5"
             style={{ borderColor: "var(--w-border)", color: "var(--w-text)" }}
           >
-            Try the Sandbox
+            Try the Canvas
           </Link>
         </div>
       </section>

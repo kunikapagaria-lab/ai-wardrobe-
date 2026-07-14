@@ -99,7 +99,7 @@ export function CanvasWorkspace({ items, onItemsChange, height = 460, isLoggedIn
           category: "other",
           colors: [],
           style: [],
-          reasoning: "Hand-picked in the Style Sandbox",
+          reasoning: "Hand-picked in the Canvas",
           pairs_with: [],
           image: item.image,
           shop_url: item.shopUrl,

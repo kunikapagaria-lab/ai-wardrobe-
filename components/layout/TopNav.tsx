@@ -23,7 +23,7 @@ export const LOGGED_IN_NAV = [
   { href: "/outfits", label: "Style AI", icon: Sparkles },
   { href: "/palette", label: "Palette", icon: Palette },
   { href: "/shop", label: "Shop", icon: ShoppingBag },
-  { href: "/sandbox", label: "Sandbox", icon: Layers },
+  { href: "/canvas", label: "Canvas", icon: Layers },
   { href: "/calendar", label: "Calendar", icon: CalendarDays },
   { href: "/profile", label: "Profile", icon: User },
 ];
@@ -71,16 +71,16 @@ function usePendingLookAutoSave() {
             category: "other",
             colors: [],
             style: [],
-            reasoning: "Hand-picked in the Sandbox",
+            reasoning: "Hand-picked in the Canvas",
             pairs_with: [],
             image: item.image,
             shop_url: item.shopUrl,
           };
           await saveToWishlist(suggestion);
         }
-        toast.success(`Saved ${items.length} item${items.length !== 1 ? "s" : ""} from your sandbox look`);
+        toast.success(`Saved ${items.length} item${items.length !== 1 ? "s" : ""} from your canvas look`);
       } catch {
-        toast.error("Couldn't save your sandbox look");
+        toast.error("Couldn't save your canvas look");
       }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
